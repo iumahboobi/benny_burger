@@ -1,0 +1,104 @@
+// This is where you can import other stylesheets or write your scss code
+@import 'reset';
+// @import 'fonts';
+@import 'typography';
+@import 'variables';
+@import url('https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister&display=swap');
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
+* {
+  font-size: 100%;
+  font-weight: bolder;
+  font-family: 'Love Ya Like A Sister', cursive;
+}
+/* Navigation-bar Starts*/
+.navbar {
+  background-color: $black;
+  color: $purple;
+}
+
+.jumbotron {
+  background-image: url(/images/lidye-1Shk_PkNkNw-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+
+  // width: 100%;
+  height: 60vh;
+  span {
+    display: block;
+  }
+  .banner-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 40vh;
+    color: $white;
+
+    .lead {
+      font-size: $font-m;
+    }
+  }
+  h1 {
+    font-size: 6rem;
+  }
+  a {
+    background-color: $primary;
+    &:hover {
+      color: $secondary;
+    }
+  }
+}
+
+h3 {
+  margin-top: 0.3rem;
+}
+
+.heading-2 {
+  h2 {
+    font-size: $font-l;
+    color: $secondary;
+  }
+}
+
+.nav-item {
+  a {
+    color: $primary;
+    &:hover {
+      color: $secondary;
+    }
+  }
+}
+
+/* Navigation-bar Ends*/
+
+/* Middle Section Starts*/
+
+.bg-color-purple {
+  background-color: $primary;
+  padding: 2rem 0;
+  .card-body {
+    a {
+      border: solid 1px $purple;
+      background-color: none;
+      color: $purple;
+      padding: 0.5rem 1rem;
+    }
+  }
+}
+
+/* Middle Section End*/
+
+.heading-1 {
+  h2 {
+    font-size: 3rem;
+  }
+}
+.heading-2 {
+  margin-top: 3rem;
+  // font-size: 3rem;
+}
+.btn {
+  color: $primary;
+  color: $secondary;
+}
