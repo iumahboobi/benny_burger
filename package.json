@@ -14,7 +14,7 @@
     "clean": "rm -rf dist",
     "clean:styles": "rm -rf src/styles",
     "copy": "mkdir dist && rsync -avr --exclude=\"/scss\" src/ dist",
-    "build": "gh-pages -d dist"
+    "build": "gh-pages -d src"
   },
   "keywords": [],
   "license": "ISC",
